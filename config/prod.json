@@ -1,0 +1,11 @@
+{
+  "url": "https://www.saucedemo.com/",
+  "login_details": 
+    {
+      "username_standard_user": "standard_user",
+      "username_locked_out_user": "locked_out_user",
+      "username_problem_user": "problem_user",
+      "username_performance_glitch_user": "performance_glitch_user",
+      "password_all_users" : "secret_sauce"
+    }
+}

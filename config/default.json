@@ -1,0 +1,33 @@
+{
+  "browsers": 
+  {
+    "firefox": "firefox",
+    "chrome": "chrome"
+  },
+  "users": 
+  {
+    "standard_user": "standard_user",
+    "locked_out_user": "locked_out_user",
+    "problem_user": "problem_user",
+    "performance_glitch_user": "performance_glitch_user"
+  },
+  "products_page": 
+  {
+    "title": "PRODUCTS",
+    "sort_by_name_AtoZ": "Name (A to Z)",
+    "sort_by_name_ZtoA": "Name (Z to A)",
+    "sort_by_price_LowtoHigh": "Price (low to high)",
+    "sort_by_price_HightoLow": "Price (high to low)",
+    "count_to_add_to_cart": "2"
+  },
+  "your_cart_page": 
+  {
+    "title": "YOUR CART",
+    "count_to_remove_from_cart": "1",
+    "remove_product_type": "cheap"
+  },
+  "checkout_page": 
+  {
+    "title": "CHECKOUT: YOUR INFORMATION"
+  }
+}

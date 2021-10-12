@@ -1,0 +1,255 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-12T02:29:09.166Z",
+    "end": "2021-10-12T02:29:18.759Z",
+    "duration": 9593,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "19a0b5a5-14be-456b-bcb8-d002103f8051",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5998c5e1-0680-4d5e-9965-3444778efa5e",
+          "title": "tray.io- SDET Take Home Task",
+          "fullFile": "D:\\tray.io\\test\\testcases.js",
+          "file": "\\test\\testcases.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"tray.io- SDET Take Home Task\"",
+              "fullTitle": "tray.io- SDET Take Home Task \"before all\" hook in \"tray.io- SDET Take Home Task\"",
+              "timedOut": false,
+              "duration": 5466,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await loginpage.launch_url(config.get(\"url\"));",
+              "err": {},
+              "uuid": "f19ce08f-b2f3-4483-815d-aa68080f5177",
+              "parentUUID": "5998c5e1-0680-4d5e-9965-3444778efa5e",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"tray.io- SDET Take Home Task\"",
+              "fullTitle": "tray.io- SDET Take Home Task \"after all\" hook in \"tray.io- SDET Take Home Task\"",
+              "timedOut": false,
+              "duration": 1306,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await loginpage.quit_browser();",
+              "err": {},
+              "uuid": "dd735e62-7cb0-4ba9-b7cf-1f42592bb901",
+              "parentUUID": "5998c5e1-0680-4d5e-9965-3444778efa5e",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "#1 Login to https://www.saucedemo.com/ using the 'standard_user' account",
+              "fullTitle": "tray.io- SDET Take Home Task #1 Login to https://www.saucedemo.com/ using the 'standard_user' account",
+              "timedOut": false,
+              "duration": 603,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await loginpage.enter_login_details(config.get(\"users.standard_user\"));\nawait loginpage.click_login();",
+              "err": {},
+              "uuid": "908fb6f1-8571-4e4c-be9c-f73524fb12dd",
+              "parentUUID": "5998c5e1-0680-4d5e-9965-3444778efa5e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "#2 Sort the products by Price (high to low)",
+              "fullTitle": "tray.io- SDET Take Home Task #2 Sort the products by Price (high to low)",
+              "timedOut": false,
+              "duration": 827,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await productspage.verify_productspage_title(\n\tconfig.get(\"products_page.title\")\n);\nawait productspage.sort_products_by_price(\n\tconfig.get(\"products_page.sort_by_price_HightoLow\")\n);",
+              "err": {},
+              "uuid": "c496e79d-d3ef-41af-9395-b5b66b4371a3",
+              "parentUUID": "5998c5e1-0680-4d5e-9965-3444778efa5e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "#3 Add the two cheapest products to your basket",
+              "fullTitle": "tray.io- SDET Take Home Task #3 Add the two cheapest products to your basket",
+              "timedOut": false,
+              "duration": 484,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await productspage.pick_least_product_to_add(\n\tconfig.get(\"products_page.count_to_add_to_cart\")\n);\nawait productspage.add_picked_products_to_basket();",
+              "err": {},
+              "uuid": "676d9f15-4430-4c4d-9f07-b6f94b4d44a7",
+              "parentUUID": "5998c5e1-0680-4d5e-9965-3444778efa5e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "#4 Open the basket",
+              "fullTitle": "tray.io- SDET Take Home Task #4 Open the basket",
+              "timedOut": false,
+              "duration": 258,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await productspage.open_basket();",
+              "err": {},
+              "uuid": "038185d8-c700-4d90-b5ca-c1f532f94e00",
+              "parentUUID": "5998c5e1-0680-4d5e-9965-3444778efa5e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "#5 Remove the cheapest product from your basket",
+              "fullTitle": "tray.io- SDET Take Home Task #5 Remove the cheapest product from your basket",
+              "timedOut": false,
+              "duration": 312,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await yourcartpage.verify_yourcartpage_title(\n\tconfig.get(\"your_cart_page.title\")\n);\nawait yourcartpage.pick_type_of_product_to_remove(\n\tconfig.get(\"your_cart_page.count_to_remove_from_cart\"),\n\tconfig.get(\"your_cart_page.remove_product_type\")\n);\nawait yourcartpage.remove_picked_products_from_basket();",
+              "err": {},
+              "uuid": "c3cba9a0-ffc6-4d80-b6cd-1a3f6687647e",
+              "parentUUID": "5998c5e1-0680-4d5e-9965-3444778efa5e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "#6 Checkout",
+              "fullTitle": "tray.io- SDET Take Home Task #6 Checkout",
+              "timedOut": false,
+              "duration": 265,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await yourcartpage.click_checkout();",
+              "err": {},
+              "uuid": "0a977cac-cfbf-4ae1-84de-7da3168c9d23",
+              "parentUUID": "5998c5e1-0680-4d5e-9965-3444778efa5e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "#7 Finish on the page where you need to enter your name and postal code (you do not need to fill in this form)",
+              "fullTitle": "tray.io- SDET Take Home Task #7 Finish on the page where you need to enter your name and postal code (you do not need to fill in this form)",
+              "timedOut": false,
+              "duration": 35,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await checkoutpage.verify_checkoutpage_title(\n\tconfig.get(\"checkout_page.title\")\n);",
+              "err": {},
+              "uuid": "cf2e6e8b-2364-44a9-a545-db08a0dd6a85",
+              "parentUUID": "5998c5e1-0680-4d5e-9965-3444778efa5e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "908fb6f1-8571-4e4c-be9c-f73524fb12dd",
+            "c496e79d-d3ef-41af-9395-b5b66b4371a3",
+            "676d9f15-4430-4c4d-9f07-b6f94b4d44a7",
+            "038185d8-c700-4d90-b5ca-c1f532f94e00",
+            "c3cba9a0-ffc6-4d80-b6cd-1a3f6687647e",
+            "0a977cac-cfbf-4ae1-84de-7da3168c9d23",
+            "cf2e6e8b-2364-44a9-a545-db08a0dd6a85"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2784,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 20000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.1.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "trayio-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "./reports",
+        "reportFilename": "trayio-report"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

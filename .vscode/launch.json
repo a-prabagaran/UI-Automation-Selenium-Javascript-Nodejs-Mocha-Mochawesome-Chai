@@ -1,0 +1,68 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "run qa tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--recursive",
+                "--timeout",
+                "0",
+                "--colors",
+                "${workspaceFolder}/test",
+                "--reporter",
+                "mochawesome",
+                "--reporter-options",
+                "reportDir=./reports,reportFilename=trayio-report"
+            ],
+            "env": {
+                "NODE_ENV": "qa"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "run dev tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--recursive",
+                "--timeout",
+                "0",
+                "--colors",
+                "${workspaceFolder}/test",
+                "--reporter",
+                "mochawesome",
+                "--reporter-options",
+                "reportDir=./reports,reportFilename=trayio-report"
+            ],
+            "env": {
+                "NODE_ENV": "dev"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "run prod tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--recursive",
+                "--timeout",
+                "0",
+                "--colors",
+                "${workspaceFolder}/test",
+                "--reporter",
+                "mochawesome",
+                "--reporter-options",
+                "reportDir=./reports,reportFilename=trayio-report"
+            ],
+            "env": {
+                "NODE_ENV": "prod"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}
