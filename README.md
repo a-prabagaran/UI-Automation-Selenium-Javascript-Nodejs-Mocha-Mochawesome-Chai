@@ -1,9 +1,9 @@
 # UI-Automation-Selenium-Javascript-Nodejs-Mocha-Mochawesome-Chai
-A Test Project using Selenium Webdriver coded in JavaScript language (runs on Node.js) using Mocha framework and Chai assertions (from NPM package manager) based on Page Object Pattern and OOPS concept with Mochawesome reporting.
+A Test Project using Selenium Webdriver coded in JavaScript language (runs on Node.js) using Mocha framework and Chai assertions (from NPM package manager) based on Page Object Pattern and OOPS concepts with Mochawesome reporting.
 
 ## How to run:
 
-* Clone the github repository which has 'geckodriver' to run on Firefox browser in 'drivers' folder (latest downloaded from https://github.com/mozilla/geckodriver/releases/)
+* Clone the github repository which has '**geckodriver**' to run on Firefox browser inside 'drivers' folder (latest downloaded from https://github.com/mozilla/geckodriver/releases/)
 * Set the driver path in '**Environment Variables-> User Variables-> Path**'.
 * From the project's root directory, run the command '**npm install**' which will install dependencies mentioned in package.json.
 * The command to then run the code as a Node.js application is '**npm run qa**' for *cross-env NODE_ENV=qa*.
